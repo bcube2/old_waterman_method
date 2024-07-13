@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script src="AnimCube3.js"></script>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<title>Waterman's Solution Method - L Layer</title>
+<style type="text/css">
+  body{background:#CDE;color:#000;font:100% Tahoma,Verdana,Arial,Helvetica,sans-serif;margin:3em 0;text-align:center}
+  #main{width:55em;margin:0 auto;text-align:left;background:#FFF;padding:2.5em 2em;font-size: 77%}
+  a:link,a:visited,a:active,a:hover{color:#128;text-decoration:none}a:hover{color:#78C;}img{border:0}
+  h1{font-size:1.4em;margin:1em 0;padding:0 0 0.5em;border:0;border-bottom:2px solid #BCF;font-weight:normal}
+  h2{font-size:1.1em;margin:0.8em 0;padding:0.15em 0.3em;font-weight:bold;background:#DEF}h3{font-size:1.1em;margin:0.8em 0;padding:0;font-weight:bold}
+  h4{font-size:1.1em;margin:0.8em 0;padding:0;font-weight:bold;color:#456}h5{font-size:1em;margin:0.8em 0;padding:0;font-weight:bold;color:#567}
+  p{font-size:1em;text-align:justify;margin:0.8em 0;padding:0}.note{font-size:0.9em;margin:0;padding:0;color:#678}
+  ul,li{margin:0;padding:0;border:0;list-style:none}ul{padding-left:1em;border-left:2px solid #BCE}
+  .icons{text-align:right}.home{text-align:center}.homet{text-align: right;margin:-12px 0 -9px}
+  .cube {display: inline-block}
+</style>
+</head>
+<body>
+ 
+<div id="main"> 
+<p class="homet"><a href="https://web.archive.org/web/20100325023107/http://rubikscube.info/"><img src="https://web.archive.org/web/20100325023107im_/http://rubikscube.info/icon/logobut.gif" alt="rubikscube.info home" height="21" width="189"></a></p>
+<h1>Waterman's Solution Method for Rubik's Cube</h1>
+<p>Completed by Josef Jelinek</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="index.html">Introduction</a></li>
+<li><a href="stage1.html"><b>Stage I: L Layer</b></a></li>
+<li><a href="stage2.html">Stage II: Corners of R Layer</a></li>
+<li><a href="stage3.html">Stage III: Redges and Midges</a></li>
+</ul>
+<h2>Stage I: L Layer</h2>
+<p>In this stage you are to solve the left cube layer.
+In this and the following stage we hold cube in such a way that the left face becomes the bottom one and after stage 2 we turn the cube back so that the solved layer is held in the left hand.
+However, you can hold the cube differently depending on your habit and/or comfort.</p>
+<p>The method presented for this step is one of the fastest but it is possible to use any other method to solve the first layer. There are many equally powerful methods but mostly they are more based on intuitive solving.</p>
+<p>This step can be completed in about 7 seconds but it requires a lot of practicing. For speedsolving you should get bellow 10 seconds.</p>
+<h3>1. First Two Corners of L Layer</h3>
+<p>This step should be the easiest one.
+Any two adjacent corners of the -L- layer should be set to mutually corect positions.
+This step can be done in at most three turns.
+You need not care about any other pieces including the center ones.
+This step is quite easy to perform even if you have no time to inspect the cube before solving.
+If you are allowed to examine the cube before solving you should find two corners to start with and try to see where the other two -L- layer corners are positioned then.
+Eventually you can plan a sequence of moves to solve all four -L- layer corners.
+During the solution of the -L- layer corners you should look ahead and track positions of pieces to continue with so as to reduce delays between steps to minimum.</p>
+<h3>2. Last Two Corners of L Layer</h3>
+<p>After solving the first two adjacent corners the other two corners should be solved.
+This step can be done intuitively, however, to reduce the time required for thinking you can learn all situations from <a href="stage1-2.html">a table of all last two corner positions</a>.
+Because this step can be performed automatically you can focus on looking ahead for edges to be solved in the next step to minimize delay between steps.</p>
+<p>There are many possible configurations in this step.
+Some of them are quite straightforward.
+We include only selected hard ones here.</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=LLLLLLLLLWLWLLLWLWLLGLLLLLGLLBLLLLLBLLLLLLRLRLLOLLLLLO&move=U R U2' R U2' R")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=LLLLLLLLLWLWLLLWLWLLGLLLLLGLLBLLLLLBLLLLLLRLRLLOLLLLLO&move=R U R2 U' R; U F R2' F' R")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=LLLLLLLLLWLWLLLWLWLLGLLLLLGLLBLLLLLBLLLLLLRLRLLOLLLLLO&move=U B U B' R2")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=LLLLLLLLLWLWLLLWLWLLGLLLLLGLLBLLLLLBLLLLLLRLRLLOLLLLLO&move=R' U' R U' R")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=LLLLLLLLLWLWLLLWLWLLGLLLLLGLLBLLLLLBLLLLLLRLRLLOLLLLLO&move=U R2' U' R' U R'; R B U B2' R' B; R' U' R' F' U' F")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=LLLLLLLLLWLWLLLWLWLLGLLLLLGLLBLLLLLBLLLLLLRLRLLOLLLLLO&move=L U F2 U' L'; R2' U R2' U' R2")</script>
+</div>
+</p>
+<p>For completeness, all possible configurations are inluded at the following location:</p>
+<p><a href="stage1-2.html">All Configurations for Solution of Second Two Corners of L Layer</a></p>
+<h3>3. Edges and Center of L Layer</h3>
+<p>The aim of this step is to solve all ledges and the -L- face center.
+This is quite intuitive step and there are many different possibilities to accomplish that.
+The general procedure can be to solve one ledge using one slice turn (and eventually one face turn to setup the ledge) and the second ledge together with -L- face center using at most two turns (if possible).
+The remaining two ledges can be solved separately of simultaneously depending on a current situation.</p>
+<p>There are many optimizations possible for this step.
+In this stage of solution you should be watching the cube carefully searching for various possibilities and optimizations, however, you should do that after you see an easy way to continue solving in order to reduce any delays between turns.
+Some of the possible optimizations follow.
+You can try to solve one ledge (using one slice turn) adjacent to the first two -L- face corners during solving the corners.
+It is possible to solve two <i>opposite</i> ledges before you solve the -L- face center, because it does not complicate solving the center with one of the remaining ledges.
+These two opposite ledges can ialso be solved during solving the -L- face corners.
+You can also solve two <i>adjacent</i> ledges <i>together</i> with the -L- face center during solving the -L- face corners.
+If you are able to do it fast, you can solve two -L- layer corners with the center and three adjacent ledges in one step and the remaining two corners and one ledge in the second step (this is very efficient method that is based on other solution methods in use, but it requires longer preinspection time).
+In the ideal case you can solve the entire -L- face without any substeps.
+It is also possible to solve the -R- layer corners using a sequence from <b>stage II</b> if you are in a good position to do so, because this step does not affect the -R- layer corners.</p>
+<p>To solve edges of the -L- layer we can use the following well-known simple sequences.</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=LLLLYLLLLWWWWWWWWWLLGLLGLLGLLBLLBLLBLLLLLLRRRLLOLLOLLO&move=R E R'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=LLLLYLLLLWWWWWWWWWLLGLLGLLGLLBLLBLLBLLLLLLRRRLLOLLOLLO&move=R' E2 R")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=LLLLYLLLLWWWWWWWWWLLGLLGLLGLLBLLBLLBLLLLLLRRRLLOLLOLLO&move=R E' R'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=LLLLYLLLLWWWWWWWWWLLGLLGLLGLLBLLBLLBLLLLLLRRRLLOLLOLLO&move=M' U M")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=LLLLYLLLLWWWWWWWWWLLGLLGLLGLLBLLBLLBLLLLLLRRRLLOLLOLLO&move=M' U2 M")</script>
+</div>
+</p>
+<p>If you have not solved the -L- face center with one of the previous three ledges, then there are sequences to solve last edge together with the face center.</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=LLLLYLLLLWWWWWWWWWLLGLLGLLGLLBLLBLLBLLLLLLRRRLLOLLOLLO&move=F M F'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=LLLLYLLLLWWWWWWWWWLLGLLGLLGLLBLLBLLBLLLLLLRRRLLOLLOLLO&move=B M B'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=LLLLYLLLLWWWWWWWWWLLGLLGLLGLLBLLBLLBLLLLLLRRRLLOLLOLLO&move=M' u M")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=LLLLYLLLLWWWWWWWWWLLGLLGLLGLLBLLBLLBLLLLLLRRRLLOLLOLLO&move=M' u2 M")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=LLLLYLLLLWWWWWWWWWLLGLLGLLGLLBLLBLLBLLLLLLRRRLLOLLOLLO&move=M' Ua S")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=LLLLYLLLLWWWWWWWWWLLGLLGLLGLLBLLBLLBLLLLLLRRRLLOLLOLLO&move=F' M2 F")</script>
+</div>
+</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=LLLLYLLLLWWWWWWWWWLLGLLGLLGLLBLLBLLBLLLLLLRRRLLOLLOLLO&move=F u2 M u2' F'; F' U2 M' U2 F")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=LLLLYLLLLWWWWWWWWWLLGLLGLLGLLBLLBLLBLLLLLLRRRLLOLLOLLO&move=M' E' u M")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=LLLLYLLLLWWWWWWWWWLLGLLGLLGLLBLLBLLBLLLLLLRRRLLOLLOLLO&move=R' D' M D R")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=LLLLYLLLLWWWWWWWWWLLGLLGLLGLLBLLBLLBLLLLLLRRRLLOLLOLLO&move=B M2 B2 M' B")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=LLLLYLLLLWWWWWWWWWLLGLLGLLGLLBLLBLLBLLLLLLRRRLLOLLOLLO&move=B M2 Fa' E' F")</script>
+</div>
+</p>
+<p class="home"><a href="https://web.archive.org/web/20100325023107/http://rubikscube.info/"><img src="https://web.archive.org/web/20100325023107im_/http://rubikscube.info/icon/logobut.gif" alt="rubikscube.info home" height="21" width="189"></a></p>
+<p class="icons"><a href="https://web.archive.org/web/20100325023107/http://validator.w3.org/check?uri=referer"><img src="https://web.archive.org/web/20100325023107im_/http://www.w3.org/Icons/valid-html401-blue" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
+<a href="https://web.archive.org/web/20100325023107/http://jigsaw.w3.org/css-validator/check/referer"><img src="https://web.archive.org/web/20100325023107im_/http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" height="31" width="88"></a></p>
+</div> 
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://web.archive.org/web/20100325023107/https://ssl." : "https://web.archive.org/web/20100325023107/http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7991812-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

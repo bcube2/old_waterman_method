@@ -1,0 +1,11 @@
+bgcolor=ffffff
+butbgcolor=88aacc
+metric=3
+fonttype=0
+initrevmove=#
+movetext=2
+scale=1
+facelets=YLYLYLYLY444444444GL8L88GL8BL9L99BL9RLRL7L777OL6L66OL6
+position=ddblll
+hint=4
+hintborder=1

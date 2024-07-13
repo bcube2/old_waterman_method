@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script src="AnimCube3.js"></script>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<title>Waterman's Solution Method - Corners of R Layer</title>
+<style type="text/css">
+  body{background:#CDE;color:#000;font:100% Tahoma,Verdana,Arial,Helvetica,sans-serif;margin:3em 0;text-align:center}
+  #main{width:55em;margin:0 auto;text-align:left;background:#FFF;padding:2.5em 2em;font-size: 77%}
+  a:link,a:visited,a:active,a:hover{color:#128;text-decoration:none}a:hover{color:#78C;}img{border:0}
+  h1{font-size:1.4em;margin:1em 0;padding:0 0 0.5em;border:0;border-bottom:2px solid #BCF;font-weight:normal}
+  h2{font-size:1.1em;margin:0.8em 0;padding:0.15em 0.3em;font-weight:bold;background:#DEF}h3{font-size:1.1em;margin:0.8em 0;padding:0;font-weight:bold}
+  h4{font-size:1.1em;margin:0.8em 0;padding:0;font-weight:bold;color:#456}h5{font-size:1em;margin:0.8em 0;padding:0;font-weight:bold;color:#567}
+  p{font-size:1em;text-align:justify;margin:0.8em 0;padding:0}.note{font-size:0.9em;margin:0;padding:0;color:#678}
+  ul,li{margin:0;padding:0;border:0;list-style:none}ul{padding-left:1em;border-left:2px solid #BCE}
+  .icons{text-align:right}.home{text-align:center}.homet{text-align: right;margin:-12px 0 -9px}
+  .cube {display: inline-block}
+</style>
+</head>
+<body>
+ 
+<div id="main"> 
+<p class="homet"><a href="https://web.archive.org/web/20100325024559/http://rubikscube.info/"><img src="https://web.archive.org/web/20100325024559im_/http://rubikscube.info/icon/logobut.gif" alt="rubikscube.info home" height="21" width="189"></a></p>
+<h1>Waterman's Solution Method for Rubik's Cube - Corners of R Layer</h1>
+<p>Completed by Josef Jelinek</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="index.html">Introduction</a></li>
+<li><a href="stage1.html">Stage I: L Layer</a></li>
+<li><a href="stage2.html"><b>Stage II: Corners of R Layer</b></a></li>
+<li><a href="stage3.html">Stage III: Redges and Midges</a></li>
+</ul>
+<h2>Stage II: Corners of R Layer</h2>
+<p>The aim of this step is to solve the last four unsolved corners of the -R- layer.
+We will temporarily turn the cube so as the -R- layer will face up.
+This step can be completed using only one sequence and can be done very quickly bacause the longest sequence requires 11 turns and all remaining sequences are shorter.
+All sequences in this step do not affect the solved -L- layer but can mix edges in the ring and -R- layer.</p>
+<p>In the beginning this step requires quite a lot of sequences to learn.
+For easier learning the whole method it is possible to solve this step in two sub-steps: orienting all corners (all top facelets are facing up) and positioning the corners to the mutually correct positions.
+After learning all eight necessary sequences you can incrementally learn the remaining ones (these 8 algorithms are subset of all necessary algorithms).</p>
+<p>Performing one of the following sequences fixes the orientation of the top four corners.</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&facelets=YLYLYLYLY444444444LL8L88LL8LL9L99LL9LLLL7L777LL6L66LL6&move=R U R' d' L' U' L")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&facelets=YLYLYLYLY444444444LL8L88LL8LL9L99LL9LLLL7L777LL6L66LL6&move=R d L U' L' B'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&facelets=YLYLYLYLY444444444LL8L88LL8LL9L99LL9LLLL7L777LL6L66LL6&move=R' U R d L U' L'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&facelets=YLYLYLYLY444444444LL8L88LL8LL9L99LL9LLLL7L777LL6L66LL6&move=R2' U2 R' U2 R2'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&facelets=YLYLYLYLY444444444LL6L66LL6LL7L77LL7LLLL9L999LL8L88LL8&move=R' U2 R2' U R2' U R2' U2 R'; R' U R2 U' R2 U' R2 U R'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&facelets=YLYLYLYLY444444444LL8L88LL8LL9L99LL9LLLL7L777LL6L66LL6&move=R U R' U R U2 R'")</script>
+</div>
+</p>
+<p>After orientation of the last four corners their position can be solved using one of the following two sequences.</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=X R2 D2' R U R' D2' R U' l")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=F2' U L' U L U' F2' U' L' U' L")</script>
+</div>
+</p>
+<p>To perform this step really quickly you will need to learn all possible cases that can occur for the last four corners.
+There are 43 different configurations of the last four corners.
+One configuration is the solved one and two configurations requires no orientation and were shown previously.
+Solutions to the remaining 40 configurations follow.</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=BU2L2F'L'FL'UB'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=RUR'U'F'U'F")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=L'U'LUFUF'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=R'URU2R2FRF'R")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=F'RBR'FRB'UR'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=LUFU'F'LU2L'U2L2")</script>
+</div>
+</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=RU'BL'BLB2U2R'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=L2DL'U2LD'L'U2L'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=R2D'RU2R'DRU2R")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=B'R'U'RU2FU'BUF'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=R'UF'RBR'FRB'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=RUBU'B'R'")</script>
+</div>
+</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=R'UF'UFU2R2B'R'B")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=FU2FDF'U2FD'F2")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=L'U2L'D'LU2L'DL2")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=RU'R'U'F'UF")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=B'UBULU'L'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=L'U2L2F'L'FL'U2L")</script>
+</div>
+</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=R2U2R'U2R2")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=RBU2BU2B'U2B2R'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=R'FRF'U2R2B'R'BR'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=F2RU2R'L'U2LF2")</script>
+</div>
+</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=BU2B2U'B2U'B2U2B")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=F2U'L'U'LU2F2L'U2L")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=F2URUR'U2F2RU2R'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=FR2U2RU2R'U2R'F'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=BL'BLB2U2RB'R'B")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=F2U'F2RU2R'F2UF2")</script>
+</div>
+</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=LU2L'U'LU'L'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=FU2F'U2F'LFL'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=F2LFL2U'L2F'L'F2")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=L'BLB'U2B'U2B")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=B'UFU'BUF'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=R2URU2L'UR2U'L")</script>
+</div>
+</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=R'U2RUR'UR")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=F'U2FU2FR'F'R")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=F2LFL2UL2F'L'F2")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=RB'R'BU2BU2B'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=BU'F'UB'U'F")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=4corners.txt&move=L2U'L'U2RU'L2UR'")</script>
+</div>
+</p>
+<p class="home"><a href="https://web.archive.org/web/20100325024559/http://rubikscube.info/"><img src="https://web.archive.org/web/20100325024559im_/http://rubikscube.info/icon/logobut.gif" alt="rubikscube.info home" height="21" width="189"></a></p>
+<p class="icons"><a href="https://web.archive.org/web/20100325024559/http://validator.w3.org/check?uri=referer"><img src="https://web.archive.org/web/20100325024559im_/http://www.w3.org/Icons/valid-html401-blue" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
+<a href="https://web.archive.org/web/20100325024559/http://jigsaw.w3.org/css-validator/check/referer"><img src="https://web.archive.org/web/20100325024559im_/http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" height="31" width="88"></a></p>
+</div> 
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://web.archive.org/web/20100325024559/https://ssl." : "https://web.archive.org/web/20100325024559/http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7991812-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

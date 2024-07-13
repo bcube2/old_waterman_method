@@ -1,0 +1,622 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<script src="AnimCube3.js"></script>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<title>Waterman's Solution Method - Redges and Midges</title>
+<style type="text/css">
+  body{background:#CDE;color:#000;font:100% Tahoma,Verdana,Arial,Helvetica,sans-serif;margin:3em 0;text-align:center}
+  #main{width:55em;margin:0 auto;text-align:left;background:#FFF;padding:2.5em 2em;font-size: 77%}
+  a:link,a:visited,a:active,a:hover{color:#128;text-decoration:none}a:hover{color:#78C;}img{border:0}
+  h1{font-size:1.4em;margin:1em 0;padding:0 0 0.5em;border:0;border-bottom:2px solid #BCF;font-weight:normal}
+  h2{font-size:1.1em;margin:0.8em 0;padding:0.15em 0.3em;font-weight:bold;background:#DEF}h3{font-size:1.1em;margin:0.8em 0;padding:0;font-weight:bold}
+  h4{font-size:1.1em;margin:0.8em 0;padding:0;font-weight:bold;color:#456}h5{font-size:1em;margin:0.8em 0;padding:0;font-weight:bold;color:#567}
+  p{font-size:1em;text-align:justify;margin:0.8em 0;padding:0}.note{font-size:0.9em;margin:0;padding:0;color:#678}
+  ul,li{margin:0;padding:0;border:0;list-style:none}ul{padding-left:1em;border-left:2px solid #BCE}
+  .icons{text-align:right}.home{text-align:center}.homet{text-align: right;margin:-12px 0 -9px}
+  .cube {display: inline-block}
+</style>
+</head>
+<body>
+ 
+<div id="main">
+<p class="homet"><a href="https://web.archive.org/web/20100215203925/http://rubikscube.info/"><img src="https://web.archive.org/web/20100215203925im_/http://rubikscube.info/icon/logobut.gif" alt="rubikscube.info home" height="21" width="189"></a></p>
+<h1>Waterman's Solution Method for Rubik's Cube - Redges and Midges</h1>
+<p class="note">Completed by Josef Jelinek</p>
+<h2>Contents</h2>
+<ul>
+<li><a href="index.html">Introduction</a></li>
+<li><a href="stage1.html">Stage I: L Layer</a></li>
+<li><a href="stage2.html">Stage II: Corners of R Layer</a></li>
+<li><a href="stage3.html"><b>Stage III: Redges and Midges</b></a></li>
+</ul>
+<h2>Stage III: Redges and Midges</h2>
+<p>At this moment eight edges should be solved in order to solve the whole cube. This can be done in 3 steps from which the last one is very simple:</p>
+<ul>
+  <li>Solving the first two or three redges while at least one of the remaining redges should end up in the -R- layer.</li>
+  <li>Solving the remaining redges and orienting midges simultaneously.</li>
+  <li>Positioning midges.</li>
+</ul>
+<p>Each step requires applying one sequence and all steps can be done using only U, M, and R types of turns without changing a grip so theese steps can be done really quickly.</p>
+<p>Note: Some cube sequence players have colored background.
+The light-red or pink bacground is used to mark additional miscelaneous sequences that are just alternatives to the sequences preeceeding them.
+The sequences in players with green background are slight modifications to the sequences preceeding them and after successful learning the "white" sequences these "green" ones are easy to derive from the "white" ones.</p>
+<p>Note: Some sequences presented have also their symmetrical variant, that is not always shown here.
+The only important symmetry for sequences of these stage is the front-back one.
+You can easily obtain the symmetrical sequence by substituing R for R', R' for R, U for U', U' for U, M for M', and M' for M.</p>
+<h3>1. Solve First Two or Three Redges</h3>
+<p>The aim of this step is to solve at least two redges.
+Solving two redges simultaneously is quite easy, however, yet another requirement should be accomplished in order to perform the following step:
+At least one of the remaining two redges should be placed anywhere in the -R- layer.
+This requirement not only dramatically reduces the number of sequences to learn but also improves the recognition of the situation that occures after this step.</p>
+<p>Depending on the current configuration one of the following subsections are to be used. This step can be skipped if one of the following situations appears:</p>
+<ul>
+  <li>Three or four redges are solved<br>=&gt; go to step 2.</li>
+  <li>Two redges are solved and at least one of the other redges is placed in -R- layer<br>=&gt; go to step 2.</li>
+  <li>Two redges are solved and the other redges are in the ring<br>=&gt; solve one redge using the shortest sequence from step 2 (<tt>U M U2 M U </tt> or <tt> U' M' U2 M' U'</tt>) and go to step 2.</li>
+</ul>
+<h4>Solve Two Redges in Ring</h4>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8LG8LG8LG999LLLBBB666LLLOOORRRLLL777444444444YYYYYYYYY&move=U2 (R) U M2 U' (R') U2")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8LG8LG8LG999LLLBBB666LLLOOORRRLLL777444444444YYYYYYYYY&move=U M' U' (r) U M2 U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8LG8LG8LG999LLLBBB666LLLOOORRRLLL777444444444YYYYYYYYY&move=U' (r') U' M U (r2)R' U")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8LG8LG8LG999LLLBBB666LLLOOORRRLLL777444444444YYYYYYYYY&move=U' M2 U (r) U' M' U")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8LG8LG8LG999LLLBBB666LLLOOORRRLLL777444444444YYYYYYYYY&move=U (r') U' M U (r) U'")</script>
+</div>
+<br>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=99dd77&facelets=8LG8LG8LG999LLLBBB666LLLOOORRRLLL777444444444YYYYYYYYY&move=U2 (R2) U M2 U' (R2) U2")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=99dd77&facelets=8LG8LG8LG999LLLBBB666LLLOOORRRLLL777444444444YYYYYYYYY&move=U M' U' (r)R U M2 U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=99dd77&facelets=8LG8LG8LG999LLLBBB666LLLOOORRRLLL777444444444YYYYYYYYY&move=U' (r' R') U' M U (r2) U")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=99dd77&facelets=8LG8LG8LG999LLLBBB666LLLOOORRRLLL777444444444YYYYYYYYY&move=U' M2 U (r R) U' M' U")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=99dd77&facelets=8LG8LG8LG999LLLBBB666LLLOOORRRLLL777444444444YYYYYYYYY&move=U (r' R') U' M U (r R) U'")</script>
+</div>
+</p>
+<h4>Solve One Redge in Ring and Other Redge in R Layer</h4>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8LG8LG8LG999LLLBBB666LLLOOORRRLLL777444444444YYYYYYYYY&move=U M' U' (R) U M U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8LG8LG8LG999LLLBBB666LLLOOORRRLLL777444444444YYYYYYYYY&move=U2 (R) U' M' U (R') U2")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8LG8LG8LG999LLLBBB666LLLOOORRRLLL777444444444YYYYYYYYY&move=U M' U' (R) U' M' U2 M2 U'")</script>
+</div>
+<br>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=99dd77&facelets=8LG8LG8LG999LLLBBB666LLLOOORRRLLL777444444444YYYYYYYYY&move=U M' U' (R2) U M U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=99dd77&facelets=8LG8LG8LG999LLLBBB666LLLOOORRRLLL777444444444YYYYYYYYY&move=U2 (R2) U' M' U (R2) U2")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=99dd77&facelets=8LG8LG8LG999LLLBBB666LLLOOORRRLLL777444444444YYYYYYYYY&move=U M' U' (R2) U' M' U2 M2 U'")</script>
+</div>
+</p>
+<h4>Solve Two Redges in R Layer</h4>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8LG8LG8LG999LLLBBB666LLLOOORRRLLL777444444444YYYYYYYYY&move=U M' U' (R) U' M' U (R') U M2 U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8LG8LG8LG999LLLBBB666LLLOOORRRLLL777444444444YYYYYYYYY&move=U2 (R) U M2 U2 M2 U (R') U2")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8LG8LG8LG999LLLBBB666LLLOOORRRLLL777444444444YYYYYYYYY&move=U (r') U' M2 U (r) U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8LG8LG8LG999LLLBBB666LLLOOORRRLLL777444444444YYYYYYYYY&move=U (r') U M2 U2 M U (r) U'")</script>
+</div>
+<br>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=99dd77&facelets=8LG8LG8LG999LLLBBB666LLLOOORRRLLL777444444444YYYYYYYYY&move=U M' U' (R2) U' M' U (R2) U M2 U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=99dd77&facelets=8LG8LG8LG999LLLBBB666LLLOOORRRLLL777444444444YYYYYYYYY&move=U2 R2 U2 R2 U2")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=99dd77&facelets=8LG8LG8LG999LLLBBB666LLLOOORRRLLL777444444444YYYYYYYYY&move=U (r' R') U' M2 U (r R) U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=99dd77&facelets=8LG8LG8LG999LLLBBB666LLLOOORRRLLL777444444444YYYYYYYYY&move=U (r' R') U M2 U2 M U (r R) U'")</script>
+</div>
+<br>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=99dd77&facelets=8LG8LG8LG999LLLBBB666LLLOOORRRLLL777444444444YYYYYYYYY&move=U M' U' (R') U' M' U (R) U M2 U'")</script>
+</div>
+</p>
+<h4>Solve Redges in R Layer Cycle</h4>
+<p>There are two types of the -R- layer cycle that can occur depending on how many edges are in the cycle: 3-cycle and 4-cycle.
+Both cases are solved the same way using one of four sequences.
+The 3-cycles are easier to identify.
+If you identify one of the cycle types, you just have to find two edges in the cycle to position and orient correctly using a suitable sequence chosen from the sequences shown here.
+Since all sequences leaves all edges positioned in -R- layer in that layer, you can be sure that at least one of the remaining two redges will be positioned in -R- layer, which is the requirement of the next step.</p>
+<p>-R- layer is temporarily held as the top layer in this step because the sequences are easier to perform then.</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&colorscheme=YWGBRO&move=M2 U M U2 M' U M2")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&colorscheme=YWGBRO&move=M U M' U2 M U M'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&colorscheme=YWGBRO&move=S' R' U R S R' U' R")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&colorscheme=YWGBRO&move=R' U R S' R' U' R S")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=ffaaaa&colorscheme=YWGBRO&move=R U R' U' M' U R U' r'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=ffaaaa&colorscheme=YWGBRO&move=r U R' U' M U R U' R'")</script>
+</div>
+</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=ffaaaa&colorscheme=YWGBRO&move=M2 U M2 U2 M2 U M2")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=ffaaaa&colorscheme=YWGBRO&move=Ls E2 M Lc U' M2 d M2 Rc2 Dc")</script>
+</div>
+</p>
+<h4>Solve Three Redges in Ring</h4>
+<p>If all four redges are in the ring we can use one of the following sequences to solve three edges in one step.
+All sequences are based on the same idea and can be understood intuitively.
+In particular, we solve two edges from the ring using a standard algorithm and at the right position in the sequence we insert another redge to the -R- layer.</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8OG8LG8LG999LLLBBB666YLLODORRRLLL777444444444YDYYYYYYY&move=U2 R' U M' U' R' M2 U M2 U' R2 U2")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8YG8LG8LG999LLLBBB666OLLODORRRLLL777444444444YDYYYYYYY&move=U2 R' U M' U' R' M2 U M2 U' R2 U2")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8LG8LG8LG999OLLBBB666LLYODORRRLLL777444444444YDYYYYYYY&move=U2 R' U' M2 U R' M2 U M2 U' R2 U2")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8LG8LG8LG999LLYBBB666LLLODORRRLLO777444444444YDYYYYYYY&move=U2 R' U M2 U' R' M2 U M U' R2 U2")</script>
+</div>
+</p>
+<h3>2. Solve Remaining Redges and Orient Midges</h3>
+<h4>Solve One Redge in Ring and Other Redge in R Layer and Orient Midges</h4>
+<h5>Redge in R layer correctly oriented in the position of the other redge</h5>
+<p>no midges flipped</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M' U' (R) U M U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=99dd77&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M' U' (R2) U M U'")</script>
+</div>
+</p>
+<p>1 midge flipped</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U' M2 U' (R) U M U' (R') U' M' U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U' M2 U' (R2) U M U' (R2) U' M' U'&bgcolor=99dd77")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M U' M U (r) U M' U' (R') U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M U' M U (rR). U M' U' .(R2). U'&bgcolor=99dd77")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U' M' U' (R) U' M U (R') U' M2 U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U' M' U' (R2) U' M U (R2) U' M2 U'&bgcolor=99dd77")</script>
+</div>
+</p>
+<p>2 midges flipped</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M' U M' U2 (r'). U M U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M' U M' U2 (r'R'). U M U'&bgcolor=99dd77")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M' U' (r') U2 M U M' U")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M' U' (r'R') U2 M U M' U&bgcolor=99dd77")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U (r') U M' U' (R) U2 M U")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U (r'R') U M' U' (R2) U2 M U&bgcolor=99dd77")</script>
+</div>
+</p>
+<p>3 midges flipped</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U (r') U M' U' (r) U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U (r'R') U M' U' (rR) U'&bgcolor=99dd77")</script>
+</div>
+</p>
+<h5>Redge in R layer flipped in the position of the other redge</h5>
+<p>no midges flipped</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M2 U (R) U' M U (R') U' M U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M2 U (R2) U' M U (R2) U' M U'&bgcolor=99dd77")</script>
+</div>
+</p>
+<p>1 midge flipped</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U (r2R') U' M U (r') U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U (r2) U' M U (r'R') U'&bgcolor=99dd77")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U' (R) U2 M U M2 U (r') U")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U' (R2) U2 M U M2 U (r'R') U&bgcolor=99dd77")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U' (r') U M U' (r2R') U")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U' (r'R') U M U' (r2) U&bgcolor=99dd77")</script>
+</div>
+</p>
+<p>2 midges flipped</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U2 (r') U2 M' U M' U (R) U2")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U2 (r'R') U2 M' U M' U (R2) U2&bgcolor=99dd77")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U2 (r) U M U' (R') U2")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U2 (rR) U M U' (R2) U2&bgcolor=99dd77")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U2 (R) U' M' U (R') U2")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U2 (R2) U' M' U (R2) U2&bgcolor=99dd77")</script>
+</div>
+</p>
+<p>3 midges flipped</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M2 U M' U' M U' (r) U' M2 U")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M2 U M' U' M U' (rR) U' M2 U&bgcolor=99dd77")</script>
+</div>
+</p>
+<h5>Redge in R layer flipped in its position</h5>
+<p>no midges flipped</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M' U' (R) U' M' U2 M2 U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M' U' (R2) U' M' U2 M2 U'&bgcolor=99dd77")</script>
+</div>
+</p>
+<p>1 midge flipped</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M U2 (r) U M' U' (rR2) U")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M U2 (rR) U M' U' (rR). U&bgcolor=99dd77")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U' (R) U' M U' M U M U (r') U")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U' (R2) U' M U' M U M U (r'R') U&bgcolor=99dd77")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U' (r') U M U' (r'R2) U2 M' U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U' (r'R') U M U' (r'R') U2 M' U'&bgcolor=99dd77")</script>
+</div>
+</p>
+<p>2 midges flipped</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M U2 M2 U (R) U2 M U M2 U")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M U2 M2 U (R2) U2 M U M2 U&bgcolor=99dd77")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M2 U2 M U (r) U M2 U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M2 U2 M U (rR) U M2 U'&bgcolor=99dd77")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U2 (R) U' M U2 M2 U' (R') U2")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U2 (R2) U' M U2 M2 U' (R2) U2&bgcolor=99dd77")</script>
+</div>
+</p>
+<p>3 midges flipped</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U' (R) U2 M U' M U' (r') U")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U' (R2) U2 M U' M U' (r'R') U&bgcolor=99dd77")</script>
+</div>
+</p>
+<h4>Solve Two Redges in R Layer and Orient Midges</h4>
+<h5>Last two redges are oriented correctly but interchanged</h5>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U2 (R') U M2 U2 M2 U (R) U2")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U (r') U M2 U2 M' U (r) U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U' M' U M2 U (R') U M U' (r) U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M U M' U2 M U (R') U M U' (r) U'")</script>
+</div>
+</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=99dd77&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U2 (R2) U M2 U2 M2 U (R2) U2")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=99dd77&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U (r' R') U M2 U2 M' U (r R) U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=99dd77&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U' M' U M2 U (R2) U M U' (r R) U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=99dd77&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M U M' U2 M U (R2) U M U' (r R) U'")</script>
+</div>
+</p>
+<h5>Last two redges are interchanged and one of the last two redges is flipped</h5>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M' U' (R) U' M' U (R') U M2 U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M U' (R) U' M2 U (r') U' M U")</script>
+</div>
+</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=99ff77&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M' U' (R2) U' M' U (R2) U M2 U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=99ff77&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M U' (R2) U' M2 U (r' R') U' M U")</script>
+</div>
+</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=99ff77&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M' U' (R') U' M' U (R) U M2 U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=99ff77&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M U' (R') U' M2 U M(R) U' M U")</script>
+</div>
+</p>
+<h5>Last two redges are interchanged and both redges are flipped</h5>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M U' (R) U' M2 U (R') U M' U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U (r') U' M2 U (r) U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M U2 (R') U' M2 U (R) U2 M' U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U2 (R') U M' U' (r) U' (R') U M' U' (R) U'")</script>
+</div>
+</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=99dd77&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M U' (R2) U' M2 U (R2) U M' U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=99dd77&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U (r' R') U' M2 U (r R) U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=99dd77&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M U2 (R2) U' M2 U (R2) U2 M' U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=99dd77&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U2 (R2) U M' U' (r R) U' (R2) U M' U' (R2) U'")</script>
+</div>
+</p>
+<h5>Last two redges are flipped in their correct positions</h5>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M U2 M2 U (R') U' M2 U2 M' U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U2 (R') U M U2 M' U2 M U' (R) U2")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U2 (r) U M U2 M' U2 M U' (R') U2")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U (r') U M2 U2 M U (r) U'")</script>
+</div>
+</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=99dd77&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M U2 M2 U (R2) U' M2 U2 M' U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=99dd77&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U2 (R2) U M U2 M' U2 M U' (R2) U2")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=99dd77&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U2 (r R) U M U2 M' U2 M U' (R2) U2")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=99dd77&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U (r' R') U M2 U2 M U (r R) U'")</script>
+</div>
+</p>
+<h4>Solve Last Redge and Orient Midges</h4>
+<p>The last redge can be either in -R- layer (then it is flipped in its position) or in the ring.
+There are two sequences to solve the flipped last redge in its position in -R- layer that orient all midges (only one or three midges can be flipped simultaneously in the ring):</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U (R) U' M' U2 M2' U' (R') U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U' M' U' M' U' M' U'")</script>
+</div>
+</p>
+<p>The following sequences solve a redge positioned in the ring and orient all midges simultaneously. The other three edges in the ring can be flipped or not flipped in any combination (none, one, two, or three are flipped):</p>
+<p>no midges flipped</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M U2 M U")</script>
+</div>
+</p>
+<p>1 midge flipped</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U (R) U' M' U (R') U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U (R) U M' U' (R') U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U' (R) U M' U' (R') U")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=ffaaaa&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U' M' U M U M' U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=ffaaaa&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M U M' U M U")</script>
+</div>
+</p>
+<p>2 midges flipped</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M U' M' U M' U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M U M' U' M' U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M' U M' U M U2 M U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=ffaaaa&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=(U2 M') U M' U M U' M U")</script>
+</div>
+</p>
+<p>3 midges flipped</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=(U R' F) U' M' U (F' R U')")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=ffaaaa&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M' U M U M U' M' U' M U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=ffaaaa&facelets=8GG8GG8GG999BBBBBB666OOOOOORRRRRR777444444444YYYYYYYYY&move=U M U' M U2 M U2 M' U M' U'")</script>
+</div>
+</p>
+<h4>Orient Midges</h4>
+<p>The first three of the following sequences are optimal, but do not use only U, M, and R-type moves (or require an initial rotation of the cube) and thus may be slower to perform.
+The other three sequences to solve these cases are a little longer but use only U, M, and R-type moves and may be faster (do not require to change a grip):</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8G88888G8999B99999666O6O666777R77777444444444555555555&move=Z' R2' U M U' R2' U M' d'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8G88888G8999B99999666O6O666777R77777444444444555555555&move=d M U' R2' U M' U' R2 Z")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8G88888G8999B9B999666O6O666777R7R777444444444555555555&move=U F2' U2 M' U M2' U F2' U2 M' U")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=ffaaaa&facelets=8G88888G8999B9B999666O6O666777R7R777444444444555555555&move=U M U M U2 M' U M' U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=ffaaaa&facelets=8G88888G8999B9B999666O6O666777R7R777444444444555555555&move=U M U' M U2 M' U' M' U'")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=ffaaaa&facelets=8G88888G8999B9B999666O6O666777R7R777444444444555555555&move=U M' U' R U r' M U M' U' r U'")</script>
+</div>
+</p>
+<p>Sequences to solve special cases for the in-place orientation of midges are longer, but are quite easy to remember and to proceed:</p>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=ffaaaa&facelets=8G88888G8999999999666O66666777R77777444444444555555555&move=M' U M' U M' d2 M' U M' U M' d2")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=ffaaaa&facelets=8888888G8999B9999966666O666777R77777444444444555555555&move=F2 M' U M' U M' d2 M' U M' U M' d2 F2")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&bgcolor=ffaaaa&facelets=8G88888G8999B9B999666O6O666777R7R777444444444555555555&move=F' L' F M' U M' U M' U M' U F' L F")</script>
+</div>
+</p>
+<h3>3. Permute Midges</h3>
+<p>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8G88G88G8999BBB999666OOO666777RRR777444444444555555555&move=U2 M2 U2")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8G88G88G8999BBB999666OOO666777RRR777444444444555555555&move=E2 M E2")</script>
+</div>
+<div class="cube" style="width:100px; height:130px">
+ <script>AnimCube3("config=default.txt&facelets=8G88G88G8999BBB999666OOO666777RRR777444444444555555555&move=U2 M U2")</script>
+</div>
+</p>
+<p class="home"><a href="https://web.archive.org/web/20100215203925/http://rubikscube.info/"><img src="https://web.archive.org/web/20100215203925im_/http://rubikscube.info/icon/logobut.gif" alt="rubikscube.info home" height="21" width="189"></a></p>
+<p class="icons"><a href="https://web.archive.org/web/20100215203925/http://validator.w3.org/check?uri=referer"><img src="https://web.archive.org/web/20100215203925im_/http://www.w3.org/Icons/valid-html401-blue" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
+<a href="https://web.archive.org/web/20100215203925/http://jigsaw.w3.org/css-validator/check/referer"><img src="https://web.archive.org/web/20100215203925im_/http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" height="31" width="88"></a></p>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://web.archive.org/web/20100215203925/https://ssl." : "https://web.archive.org/web/20100215203925/http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7991812-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>
